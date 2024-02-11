@@ -5,16 +5,9 @@ import RoundedButton from "../RoundedButton/RoundedButton"
 export default () => {
     const [showMenu, setShowMenu] = useState(false);
 
-    const toggleMenu = () => {
-        setShowMenu(!showMenu);
-        // const navMenu = document.getElementsByClassName('navbar--menu');
-        // navMenu ? navMenu.classList.add('')
-        // .navbar--showMenu
-    };
     return (
         <nav className="navbar">
             <img src="../../assets/icons/paw.svg" className="navbar--icon"></img>
-            {/* {showMenu ? ( */}
             <div className={`navbar--menu ${showMenu ? 'navbar--showMenu' : ''}`}>
                 <ToggleTextButtons buttonsProps={
                     [
@@ -36,14 +29,10 @@ export default () => {
                     ]
                 } />
                 <RoundedButton className="navbar--roundedButton" text='Cuenta' ></RoundedButton>
-
             </div>
-            {/* ) : ( */}
-            <div className="navbar--hamburger" onClick={toggleMenu}>
+            <div className="navbar--hamburger" onClick={() => setShowMenu(!showMenu)}>
                 ☰
             </div>
-            {/* )} */}
-
         </nav>
     )
 }
