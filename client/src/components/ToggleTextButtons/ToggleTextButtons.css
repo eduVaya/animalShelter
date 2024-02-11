@@ -1,0 +1,21 @@
+.toggleTextButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.toggleTextButtons--button {
+    background-color: transparent;
+    color: #888;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.toggleTextButtons--button:focus {
+    outline: none;
+}
+
+.toggleTextButtons--button.active {
+    color: #000;
+}

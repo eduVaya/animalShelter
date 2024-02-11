@@ -4,3 +4,8 @@ body {
     padding: 0;
     background-color: #f2f2f2;
 }
+
+:root {
+    --main-color: #d30c11;
+    --darker-main-color: #800505
+}

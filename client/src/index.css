@@ -1,2 +1,4 @@
 @import './base.css';
 @import './components/Navbar/Navbar.css';
+@import './components/ToggleTextButtons/ToggleTextButtons.css';
+@import './components/RoundedButton/RoundedButton.css';

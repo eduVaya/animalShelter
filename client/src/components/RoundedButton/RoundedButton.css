@@ -1,0 +1,22 @@
+.roundedButton {
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.roundedButton:hover {
+    background-color: var(--darker-main-color);
+}
+
+.roundedButton:focus {
+    outline: none;
+}
+
+.roundedButton:active {
+    transform: translateY(1px);
+}
