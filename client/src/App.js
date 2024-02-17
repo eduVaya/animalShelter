@@ -8,15 +8,15 @@ import Adoption from './containers/Adoption/Adoption';
 function App() {
   return (
     <BrowserRouter>
-      <div className='container'>
-        <Navbar />
-        <div className='content'>
-          <Routes>
-            <Route exact path='/' element={<Adoption />} />
-          </Routes>
-        </div>
-
+      {/* <div className='container'> */}
+      <Navbar />
+      <div className='content'>
+        <Routes>
+          <Route exact path='/' element={<Adoption />} />
+        </Routes>
       </div>
+
+      {/* </div> */}
     </BrowserRouter>
   );
 }

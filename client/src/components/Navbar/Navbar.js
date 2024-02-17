@@ -3,9 +3,12 @@ import paw from '../../assets/icons/paw.svg'
 import ToggleTextButtons from "../ToggleTextButtons/ToggleNavButtons"
 import RoundedButton from "../RoundedButton/RoundedButton"
 import RoundedProfilePicture from "../RoundedProfilePicture/RoundedProfilePicture";
+import Modal from "../Modal/Modal";
 
 export default () => {
     const [showMenu, setShowMenu] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
 
     return (
         <nav className="navbar">
@@ -32,13 +35,21 @@ export default () => {
                 } />
                 <div className="navbar--accountContainer">
                     {/* <RoundedButton className="navbar--roundedButton" text='Cuenta' ></RoundedButton> */}
-                    <button className="btn bg-main-color text-white-color">Cuenta</button>
+                    <button className="btn bg-main-color text-white-color" onClick={() => setIsOpen(true)}>Iniciar</button>
                     <RoundedProfilePicture />
                 </div>
             </div>
             <div className="navbar--hamburger" onClick={() => setShowMenu(!showMenu)}>
                 ☰
             </div>
+            <Modal open={isOpen}>
+                <div>
+                    <h1>Iniciar sesión</h1>
+                    <button onClick={() => setIsOpen(false)}>Close</button>
+                </div>
+
+
+            </Modal>
         </nav>
     )
 }

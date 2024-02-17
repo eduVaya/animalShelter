@@ -2,6 +2,7 @@
 @import './style/base.css';
 @import './style/baseElements.css';
 /* components */
+@import './components/Modal/Modal.css';
 @import './components/Navbar/Navbar.css';
 @import './components/ToggleTextButtons/ToggleTextButtons.css';
 @import './components/RoundedButton/RoundedButton.css';

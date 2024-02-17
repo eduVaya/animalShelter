@@ -27,10 +27,11 @@ h4 {
 
 #root {
     height: 100%;
+    width: fit-content;
 }
 
 :root {
-    --main-color: #d30c11;
-    --darker-main-color: #800505;
+    --main-color: #9932cc;
+    --darker-main-color: #a950e0;
     --light-gray-color: #888;
 }
