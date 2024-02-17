@@ -1,0 +1,18 @@
+.adoption {
+    display: grid;
+    gap: 2rem;
+}
+
+.adoption--filterButtons {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.adoption--cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}

@@ -1,4 +1,11 @@
-@import './base.css';
+/* style */
+@import './style/base.css';
+@import './style/baseElements.css';
+/* components */
 @import './components/Navbar/Navbar.css';
 @import './components/ToggleTextButtons/ToggleTextButtons.css';
 @import './components/RoundedButton/RoundedButton.css';
+@import './components/RoundedProfilePicture/RoundedProfilePicture.css';
+@import './components/AnimalCard/AnimalCard.css';
+/* Components */
+@import './containers/Adoption/Adoption.css';

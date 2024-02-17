@@ -3,17 +3,20 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
-import Landing from './containers/Landing';
+import Adoption from './containers/Adoption/Adoption';
 
 function App() {
   return (
     <BrowserRouter>
-      <>
+      <div className='container'>
         <Navbar />
-        <Routes>
-          <Route exact path='/' element={<Landing />} />
-        </Routes>
-      </>
+        <div className='content'>
+          <Routes>
+            <Route exact path='/' element={<Adoption />} />
+          </Routes>
+        </div>
+
+      </div>
     </BrowserRouter>
   );
 }

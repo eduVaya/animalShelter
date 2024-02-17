@@ -1,13 +1,15 @@
 import React, { useState } from "react"
+import paw from '../../assets/icons/paw.svg'
 import ToggleTextButtons from "../ToggleTextButtons/ToggleNavButtons"
 import RoundedButton from "../RoundedButton/RoundedButton"
+import RoundedProfilePicture from "../RoundedProfilePicture/RoundedProfilePicture";
 
 export default () => {
     const [showMenu, setShowMenu] = useState(false);
 
     return (
         <nav className="navbar">
-            <img src="../../assets/icons/paw.svg" className="navbar--icon"></img>
+            <img src={paw} className="navbar--icon"></img>
             <div className={`navbar--menu ${showMenu ? 'navbar--showMenu' : ''}`}>
                 <ToggleTextButtons buttonsProps={
                     [
@@ -28,7 +30,11 @@ export default () => {
                         }
                     ]
                 } />
-                <RoundedButton className="navbar--roundedButton" text='Cuenta' ></RoundedButton>
+                <div className="navbar--accountContainer">
+                    {/* <RoundedButton className="navbar--roundedButton" text='Cuenta' ></RoundedButton> */}
+                    <button className="btn bg-main-color text-white-color">Cuenta</button>
+                    <RoundedProfilePicture />
+                </div>
             </div>
             <div className="navbar--hamburger" onClick={() => setShowMenu(!showMenu)}>
                 ☰

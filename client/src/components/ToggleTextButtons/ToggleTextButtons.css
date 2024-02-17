@@ -1,11 +1,12 @@
 .toggleTextButtons {
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 .toggleTextButtons--button {
     background-color: transparent;
-    color: #888;
+    color: var(--light-gray-color);
     border: none;
     margin: 0 5px;
     cursor: pointer;

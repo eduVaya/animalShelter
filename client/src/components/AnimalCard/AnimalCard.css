@@ -1,0 +1,23 @@
+.animalCard {
+    height: 20rem;
+    width: 20rem;
+    background-color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+}
+
+.animalCard--bottomContainer {
+    display: flex;
+}
+
+.animalCard--bottomContainer--shelterName {
+    margin: auto;
+    margin-left: 0;
+}
+
+.animalCard--img {}
+
+.animalCard--title {}
+
+.animalCard--button {}

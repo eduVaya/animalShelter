@@ -12,11 +12,3 @@
 .roundedButton:hover {
     background-color: var(--darker-main-color);
 }
-
-.roundedButton:focus {
-    outline: none;
-}
-
-.roundedButton:active {
-    transform: translateY(1px);
-}
